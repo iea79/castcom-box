@@ -1,4 +1,81 @@
 extends layout/layout.pug
 
 block content
-    .container_center
+    section.dev-stages
+        .container
+            h2.title.blue
+                span ЭТАПЫ 
+                | РАЗРАБОТКИ САЙТА В СТУДИИ CASTCOM
+
+            -
+                stages = [
+                    {
+                        name: 'Аналитика',
+                        text: 'Погружаемся в специфику бизнеса заказчика, изучаем его бренд, продукт, аудиторию и конкурентов. Анализируем полученные данные. На основе этой информации составляем техническое задание, определяем цели и задачи проекта.'
+                    },
+                    {
+                        name: 'План работ',
+                        text: 'Используя данные исследований рынка и бизнеса заказчика, разрабатываем четкий план-график работ. Составляем смету работ с реальными сроками и согласуем ее с заказчиком.'
+                    },
+                    {
+                        name: 'Дизайн',
+                        text: 'Подготавливаем дизайн-макеты, в которых отображаем все структурные элементы страниц сайта. Занимаемся созданием уникального адаптивного дизайна и создаем прототипы страниц.'
+                    },
+                    {
+                        name: 'Верстка и программирование',
+                        text: 'Программирование функционала любой сложности и создание адаптивной верстки для корректного отображения ресурса на всех браузерах и устройствах.'
+                    },
+                    {
+                        name: 'Тестирование',
+                        text: 'Перед сдачей проекта заказчику проводим финальные тестирования как в автоматическом, так и в ручном режиме. Проверяем эффективность работы и скорость загрузки страниц.'
+                    },
+                    {
+                        name: 'Хостинг и домен',
+                        text: 'Готовый веб-сайт переносим на хостинг и помогаем с выбором доменного имени. После чего проект уже полностью готов к работе. Предоставляем заказчику всю необходимую документацию.'
+                    },
+                ]
+            .dev-stages__content
+                .dev-stages__left
+                    .dev-stages__list
+                        ol.dev-stages__titles
+                            each item, i in stages
+                                -active = ''
+                                if i == 0
+                                    -active = 'active'
+                                li(class=active)=item.name
+                .dev-stages__right
+                    .dev-stages__description
+                        each item, i in stages
+                            -active = ''
+                            if i == 0
+                                -active = 'active'
+
+                            .dev-stages__item(class=active)
+                                .dev-stages__label=item.name
+                                .dev-stages__icon
+                                    img(src="images/dev-stages-"+(i+1)+".svg", alt="")
+                                    img.active(src="images/dev-stages-hover-"+(i+1)+".svg", alt="")
+                                .dev-stages__text=item.text
+
+            .dev-stages__action
+                a.button.yellow(href="#") Заказать расчет стоимости
+
+
+    // begin recomend-service
+    section#recomend-service.recomend-service.section
+        .container
+            h2.title.blue
+                span Рекомендуемые 
+                | услуги
+            .recomend-service__list
+                each item, i in [{name: 'Техническая поддержка', text: 'Обеспечим бесперебойную работу сайта, внедрим доработки и исправим ошибки'}, {name: 'SEO продвижение', text: 'Обеспечим максимальный приток целевых посетителей на Ваш сайт из поисковых систем'}, {name: 'Брендинг', text: 'Разработаем для Вашей компании фирменный стиль, логотип, Брендбук/Гайдлайн'}, {name: 'Брендинг', text: 'Разработаем для Вашей компании фирменный стиль, логотип, Брендбук/Гайдлайн'}]
+                    .recomend-service__item
+                        .recomend-service__head
+                            .recomend-service__icon
+                                img(src="images/recomend-service-"+(i+1)+".png", alt="")
+                            .recomend-service__name=item.name
+                        .recomend-service__text=item.text
+                        .recomend-service__link
+                            a.button.button-more(href="") Подробнее
+
+    // end recomend-service

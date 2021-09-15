@@ -5,31 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css?0.1"/>
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__left"><a class="logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
-        <nav class="header__right">
-          <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="">Page1</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page2</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page3</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page4</a></li>
-          </ul>
-        </nav>
+    <section class="dev-stages">
+      <div class="container">
+        <h2 class="title blue"><span>ЭТАПЫ </span>РАЗРАБОТКИ САЙТА В СТУДИИ CASTCOM</h2>
+        <div class="dev-stages__content">
+          <div class="dev-stages__left">
+            <div class="dev-stages__list">
+              <ol class="dev-stages__titles">
+                <li class="active">Аналитика</li>
+                <li>План работ</li>
+                <li>Дизайн</li>
+                <li>Верстка и программирование</li>
+                <li>Тестирование</li>
+                <li>Хостинг и домен</li>
+              </ol>
+            </div>
+          </div>
+          <div class="dev-stages__right">
+            <div class="dev-stages__description">
+              <div class="dev-stages__item active">
+                <div class="dev-stages__label">Аналитика</div>
+                <div class="dev-stages__icon"><img src="images/dev-stages-1.svg" alt=""/><img class="active" src="images/dev-stages-hover-1.svg" alt=""/></div>
+                <div class="dev-stages__text">Погружаемся в специфику бизнеса заказчика, изучаем его бренд, продукт, аудиторию и конкурентов. Анализируем полученные данные. На основе этой информации составляем техническое задание, определяем цели и задачи проекта.</div>
+              </div>
+              <div class="dev-stages__item">
+                <div class="dev-stages__label">План работ</div>
+                <div class="dev-stages__icon"><img src="images/dev-stages-2.svg" alt=""/><img class="active" src="images/dev-stages-hover-2.svg" alt=""/></div>
+                <div class="dev-stages__text">Используя данные исследований рынка и бизнеса заказчика, разрабатываем четкий план-график работ. Составляем смету работ с реальными сроками и согласуем ее с заказчиком.</div>
+              </div>
+              <div class="dev-stages__item">
+                <div class="dev-stages__label">Дизайн</div>
+                <div class="dev-stages__icon"><img src="images/dev-stages-3.svg" alt=""/><img class="active" src="images/dev-stages-hover-3.svg" alt=""/></div>
+                <div class="dev-stages__text">Подготавливаем дизайн-макеты, в которых отображаем все структурные элементы страниц сайта. Занимаемся созданием уникального адаптивного дизайна и создаем прототипы страниц.</div>
+              </div>
+              <div class="dev-stages__item">
+                <div class="dev-stages__label">Верстка и программирование</div>
+                <div class="dev-stages__icon"><img src="images/dev-stages-4.svg" alt=""/><img class="active" src="images/dev-stages-hover-4.svg" alt=""/></div>
+                <div class="dev-stages__text">Программирование функционала любой сложности и создание адаптивной верстки для корректного отображения ресурса на всех браузерах и устройствах.</div>
+              </div>
+              <div class="dev-stages__item">
+                <div class="dev-stages__label">Тестирование</div>
+                <div class="dev-stages__icon"><img src="images/dev-stages-5.svg" alt=""/><img class="active" src="images/dev-stages-hover-5.svg" alt=""/></div>
+                <div class="dev-stages__text">Перед сдачей проекта заказчику проводим финальные тестирования как в автоматическом, так и в ручном режиме. Проверяем эффективность работы и скорость загрузки страниц.</div>
+              </div>
+              <div class="dev-stages__item">
+                <div class="dev-stages__label">Хостинг и домен</div>
+                <div class="dev-stages__icon"><img src="images/dev-stages-6.svg" alt=""/><img class="active" src="images/dev-stages-hover-6.svg" alt=""/></div>
+                <div class="dev-stages__text">Готовый веб-сайт переносим на хостинг и помогаем с выбором доменного имени. После чего проект уже полностью готов к работе. Предоставляем заказчику всю необходимую документацию.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dev-stages__action"><a class="button yellow" href="#">Заказать расчет стоимости</a></div>
       </div>
-    </header>
-    <main class="main_content">
-      <div class="container_center"></div>
-    </main>
-    <footer class="footer">
-      <div class="footer__content">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+    </section>
+    <!-- begin recomend-service-->
+    <section class="recomend-service section" id="recomend-service">
+      <div class="container">
+        <h2 class="title blue"><span>Рекомендуемые </span>услуги</h2>
+        <div class="recomend-service__list">
+          <div class="recomend-service__item">
+            <div class="recomend-service__head">
+              <div class="recomend-service__icon"><img src="images/recomend-service-1.png" alt=""/></div>
+              <div class="recomend-service__name">Техническая поддержка</div>
+            </div>
+            <div class="recomend-service__text">Обеспечим бесперебойную работу сайта, внедрим доработки и исправим ошибки</div>
+            <div class="recomend-service__link"><a class="button button-more" href="">Подробнее</a></div>
+          </div>
+          <div class="recomend-service__item">
+            <div class="recomend-service__head">
+              <div class="recomend-service__icon"><img src="images/recomend-service-2.png" alt=""/></div>
+              <div class="recomend-service__name">SEO продвижение</div>
+            </div>
+            <div class="recomend-service__text">Обеспечим максимальный приток целевых посетителей на Ваш сайт из поисковых систем</div>
+            <div class="recomend-service__link"><a class="button button-more" href="">Подробнее</a></div>
+          </div>
+          <div class="recomend-service__item">
+            <div class="recomend-service__head">
+              <div class="recomend-service__icon"><img src="images/recomend-service-3.png" alt=""/></div>
+              <div class="recomend-service__name">Брендинг</div>
+            </div>
+            <div class="recomend-service__text">Разработаем для Вашей компании фирменный стиль, логотип, Брендбук/Гайдлайн</div>
+            <div class="recomend-service__link"><a class="button button-more" href="">Подробнее</a></div>
+          </div>
+          <div class="recomend-service__item">
+            <div class="recomend-service__head">
+              <div class="recomend-service__icon"><img src="images/recomend-service-4.png" alt=""/></div>
+              <div class="recomend-service__name">Брендинг</div>
+            </div>
+            <div class="recomend-service__text">Разработаем для Вашей компании фирменный стиль, логотип, Брендбук/Гайдлайн</div>
+            <div class="recomend-service__link"><a class="button button-more" href="">Подробнее</a></div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+    <!-- end recomend-service-->
     <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/function.js?0.1"></script>
   </body>
 </html>

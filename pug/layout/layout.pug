@@ -7,13 +7,13 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
 
+        link(rel="stylesheet", type="text/css", href="css/main.css")
         link(rel="stylesheet", type="text/css", href="css/style.css?"+version+"")
     body
-        include header.pug
+        //- include header.pug
 
-        main.main_content
-            block content
+        block content
 
-        include footer.pug
+        //- include footer.pug
 
         include scripts.pug
